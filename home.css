@@ -1,0 +1,430 @@
+.header {
+    background-color: #163020;
+    color: white;
+    text-align: center;
+}
+
+.header .news {
+    background-color: #163020;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    height: 13px;
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #163020;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 10px solid #163020;
+    border-top: 10px solid #163020;
+}
+
+.header-content h1 {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.navbar {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: #163020;
+    font-size: 20px;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    background-color: #163020;
+    color: white;
+    border-radius: 50px 50px;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #163020;
+    border-radius: 5%;
+    min-width: 160px;
+    font-weight: bold;
+    top: 98%;
+}
+
+.submenu a {
+    font-size: 19px;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.submenu a:hover {
+    font-size: 25px;
+    background-color: white;
+    color: #163020;
+    text-align: left;
+}
+
+.dropdown:hover .submenu {
+    display: block;
+}
+
+.hero {
+    position: relative;
+    background-image: url('college4.jpeg');
+    /* main image */
+    background-size: cover;
+    background-position: center;
+    height: 460px;
+}
+
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #163020;
+    left: 1%;
+    font-family: garamond;
+    background: rgba(255, 255, 255, 0.6); /* Transparent white */
+    padding: 20px; /* Adds spacing around text */
+    border-radius: 10px; /* Soft rounded edges */
+}
+
+.hero h1 {
+    font-size: 35px;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 10px 0 0;
+}
+
+.content {
+    display: flex;
+    padding: 0px;
+    background-color: #163020;
+}
+
+.content .section {
+    width: 30%;
+    background-color: #163020;
+    padding: 20px;
+    margin: 6px;
+    color: white;
+    font-weight: bold;
+}
+
+.section h3 {
+    border-bottom: 2px solid white;
+    font-family: Times New Roman;
+    padding-bottom: 10px;
+}
+
+.section p {
+    margin: 10px 0;
+    color: white;
+    background-color: #163020;
+    font-size: 17px;
+}
+
+.middle {
+    display: flex;
+    padding: 0px;
+    background-color: white;
+    padding: 10px;
+}
+
+.middle .sec {
+    width: 350px;
+    height: 250px;
+    background-color: white;
+    margin: 6px;
+    color: #163020;
+    font-weight: bold;
+    margin-left: 12px;
+    box-shadow: 2px 3px 10px 1px #9c968e;
+
+}
+.sec:hover{
+    width: 360px;
+    height: 250px;
+    text-align: left;
+    border-image-width: auto;
+    box-shadow: 2px 3px 10px 10px #163020;
+}
+.sec h3 {
+    border-bottom: 2px solid #163020;
+    font-family: Times New Roman;
+    background-color: #163020;
+    color: white;
+    text-align: center;
+    height: 30px;
+    top: 40px;
+    padding: 10px;
+    font-size: 23px;
+}
+
+.sec p {
+    font-size: 16.5px;
+    margin: 10px;
+    color: #163020;
+    background-color: white;
+    padding: 10px;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: #163020;
+    background-color: white;
+}
+
+.social-media .icon {
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.sec p,
+.sec a {
+    margin: 0;
+}
+
+
+.middleimage {
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap to the next row */
+    justify-content: space-between; /* Adds spacing between items */
+    gap: 25px; /* Adds uniform spacing between images */
+    background-color: white;
+    padding: 20px;
+}
+
+.middleimage .sec1 {
+    flex: 1 1 calc(25% - 20px); /* Each image takes 25% of the width minus spacing */
+    max-width: 335px; /* Prevents images from becoming too large */
+    background-color: white;
+    box-shadow: 2px 3px 10px 1px #9c968e;
+    border: 8px solid #163020;
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.middleimage .sec1 img {
+    width: 100%; /* Makes the image fill its container */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Removes any extra gaps */
+}
+
+.sec1:hover {
+    box-shadow: 2px 3px 10px 10px #163020;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .middleimage .sec1 {
+        flex: 1 1 calc(50% - 20px); /* Images take up 50% width on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .middleimage .sec1 {
+        flex: 1 1 100%; /* Images stack vertically on smaller screens */
+    }
+}
+.footer {
+    background-color: white;
+    color: #163020;
+    text-align: center;
+    padding: 10px 0;
+    height: 12px;
+    font-weight: bold;
+    border-bottom: 10px solid #163020;
+}
+
+.IMG1 {
+    margin-right: -60px;
+}
+
+.line {
+    background-color: #163020;
+    height: 8px;
+}
+
+.line1 {
+    background-color: white;
+    height: 6px;
+}
+
+.line2 {
+    background-color: #163020;
+    height: 6px;
+}
+
+.Heading {
+    color: #163020;
+    font-size: 35px;
+}
+
+.main {
+    padding: 50px;
+}
+
+.belowimgtxt {
+    float: right;
+    margin-right: -181px;
+    margin-top: 300px;
+    font-size: 20px;
+    color: #163020;
+    font-weight: bold;
+}
+
+.IMG2 {
+    float: right;
+    margin-right: 40px;
+    margin-top: 7%;
+    border: 5px solid #D0B8A8;
+    box-shadow: 10px 10px 10px #163020;
+    font-weight: bold;
+}
+
+a {
+    color: white;
+}
+
+button {
+    width: 80px;
+    height: 40px;
+    background-color: #163020;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: garamond;
+    border-radius: 15%;
+}
+
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .header-content {
+        flex-direction: column;
+    }
+
+    .header-content h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .content .section,
+    .middle .sec {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .social-media {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .content .section,
+    .middle .sec {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 12px;
+    }
+
+    .header-content h1 {
+        font-size: 20px;
+    }
+}
+
+
+.middleimage1 { 
+    display: flex;
+    flex-wrap: wrap; /* Allows images to wrap to the next row */
+    justify-content: space-evenly; /* Distributes space more evenly */
+    gap: 10px; /* Reduces spacing between images */
+    background-color: white;
+    padding: 10px;
+}
+
+.middleimage1 .sec2 { 
+    flex: 1 1 calc(23% - 10px); /* Slightly wider images with reduced spacing */
+    max-width: 345px; /* Limits the maximum width */
+    background-color: white;
+    padding:10px;
+    box-shadow: 2px 3px 8px 1px #9c968e;
+    border: 6px solid #163020; /* Reduces border size */
+    box-sizing: border-box; /* Includes padding and border in the width */
+}
+
+.middleimage1 .sec2 img { 
+    width: 100%; /* Makes the image fill its container */
+    height: auto; /* Maintains the image's aspect ratio */
+    display: block; /* Removes any extra gaps */
+}
+
+.sec2:hover { 
+    box-shadow: 2px 3px 10px 8px #163020; /* Subtle hover effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .middleimage1 .sec2 {
+        flex: 1 1 calc(48% - 10px); /* Adjust width for tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .middleimage1 .sec2 {
+        flex: 1 1 calc(98% - 10px); /* Adjust width for mobile screens */
+    }
+}

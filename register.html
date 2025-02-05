@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration - L.D. Sonawane College</title>
+    <link rel="stylesheet" href="Home.css">
+    <style>
+        
+	body {
+            font-family: Garamond;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+        .registration-container {
+            background-color: white;
+            border: 2px solid #163020;
+            border-radius: 10px;
+            width: 1200px;
+            padding: 20px;
+            box-shadow: 10px 10px 10px 10px #163020;
+        }
+
+        .registration-container h2 {
+            text-align: center;
+            color: #163020;
+            margin-bottom: 20px;
+        }
+
+        .registration-container label {
+            color: #163020;
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        .registration-container input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #163020;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .registration-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #163020;
+            color: #FCF8F3;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .registration-container button:hover {
+            background-color: #145018;
+        }
+
+
+
+        .instructions-box {
+            margin-top: 20px;
+            background-color: #F5F5F5;
+            border: 1px solid #163020;
+            padding: 15px;
+            font-size: 14px;
+            color: #163020;
+            border-radius: 5px;
+        }
+
+        .instructions-box h3 {
+            margin-top: 0;
+        }
+
+	 .name-fields {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-fields div {
+    width: 30%; /* Ensure each input takes up equal width, you can adjust this */
+}
+
+.name-fields input {
+    width: 100%; /* Inputs take up full width of their container */
+    margin-right: 10px; /* Adjust this value for spacing between inputs */
+}
+
+.name-fields div:last-child input {
+    margin-right: 0; /* Remove margin from the last input */
+}
+
+.clogin{padding:50px; display:flex; justify-content:center;}
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+        <div class="news">
+            <marquee scrollamount="10%">News : Check out our Latest Update on the Home Page</marquee>
+        </div>
+    </div>
+    <div class="header-content">
+        <a href="home.html"><img class="IMG1" src="LOGO.jpeg" style="width:80px;height:80px;"></a>
+        <h1>L.D. Sonawane</h1>
+        <div class="navbar">
+            <a href="Home.html"><b>Home</b></a>
+            <div class="dropdown">
+                <a href="about.html"><b>About Us</b></a>
+                <div class="submenu"><br>
+                    <a href="about.html">About College</a>
+                    <a href="objectives.html">Objectives</a>
+                    <a href="chairman.html">Chairman's Message</a>
+                    <a href="General Secretary_s.html">General Secretary's Message</a>
+                    <a href="Principals.html">Principal's Mesage</a>
+                    <a href="administration.html">Administration</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <a href="#"><b>Faculty</b></a>
+                <div class="submenu"><br>
+                    <a href="degreestaff.html">Degree College Staff</a>
+                    <a href="juniorstaff.html">Junior College Staff</a>
+                    <a href="pgstaff.html">Post Graduate</a>
+                    <a href="nonteachingstaff.html">Non Teaching Staff</a>
+                </div>
+            </div>
+            <a href="Facilities.html"><b>Facilities</b></a>
+            <a href="Admission.html">Admission</a>
+            <a href="Gallery.html"><b>Gallery</b></a>
+            <a href="Notice.html"><b>Notice Board</b></a>
+            <a href="Contact.html"><b>Contact Us</b></a>
+        </div>
+    </div>
+
+   <div class="clogin">
+    <div class="registration-container">
+        <h2>Register</h2>
+        <form action="registration_process.html" method="post">
+
+       <div class="name-fields">
+    	    <div>
+        	<label for="first-name">First Name</label>
+        	<input type="text" id="first-name" name="first_name" placeholder="Enter your first name" required>
+    	    </div>
+    	    <div>
+        	<label for="middle-name">Middle Name</label>
+        	<input type="text" id="middle-name" name="middle_name" placeholder="Enter your middle name" required>
+    	    </div>
+    	    <div>
+        	<label for="last-name">Last Name</label>
+        	<input type="text" id="last-name" name="last_name" placeholder="Enter your last name" required>
+    	   </div>
+	</div>
+
+	<div class="name-fields">
+	    <div>
+            <label for="mothers-name">Mother's Name</label>
+            <input type="text" id="mothers-name" name="mothers_name" placeholder="Enter your mother's name" required>
+	    </div><div>
+	    <!-- Class -->
+            <label for="class">Class</label>
+            <input type="text" id="class" name="class" placeholder="Enter your class" required>
+	    </div>
+
+	    <div>
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+	    </div>
+	</div>
+
+	<div class="name-fields">
+	    <div>
+            <!-- Contact Details -->
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+	    </div>
+	    <div>
+            <label for="phone">Alternate Phone Number</label>
+            <input type="tel" id="alphone" name="phone" placeholder="Enter phone number" required>
+	    </div>
+	    <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+	    </div>
+	</div>
+
+	<div class="name-fields">
+	    <div>
+            <!-- Username and Password -->
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Choose a username" required>
+	    </div>
+	    <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Create a password" required>
+	    </div>
+	    <div>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm_password" placeholder="Confirm your password" required>
+	    </div>
+	</div>
+            <!-- Submit Button -->
+            <button type="submit">Pay Fees to Register</button>
+        </form>
+
+
+            <center><p><b>I Have Already Registered?</b></p></center>
+	    <a href="Admission.html"><button type="submit">Login Here</button></a>
+
+
+        <!-- Instructions Box -->
+        <div class="instructions-box">
+            <h3>Important Instructions</h3>
+            <p>Note: On Payment of Fees, Form No. & password will be shown on the screen and sent to your email.</p>
+            <p>In case of the following situations:</p>
+            <ul>
+                <li><strong>Payment deducted from the bank account but shown as failure:</strong> Click on <strong>Search</strong>, enter the details entered here, click on <strong>Get Data</strong>, and click on <strong>Refresh payment</strong> after 1 hour.</li>
+                <li><strong>Email not received:</strong> Click on <strong>Search</strong>, enter the details entered here, click on <strong>Get Data</strong>, and click on <strong>Resend</strong>.</li>
+            </ul>
+        </div>
+    </div></div>
+
+<div class="content">
+        <div class="section">
+            <h3><b>ABOUT US</b></h3>
+            <p>We are committed to provide Quality Education with a mission to strengthen the minds and expand intellect
+                of our students and to empower them with additional skills so that they could accept and face the
+                challenges of 21st century and also accept the social responsibilities.</p>
+        </div>
+        <div class="section">
+            <h3>IMPORTANT LINK</h3>
+            <p><a href="rules.html">College Rules Regulations</a></p>
+            <p><a href="events.html">Announcements</a></p>
+            <p><a href="events.html">Upcoming Events</a></p>
+            <p><a href="facilities.html">Facilities</a></p>
+            </p>
+        </div>
+        <div class="section">
+            <h3>CONTACT US</h3>
+            <p>Add: Opp. Fire Station, <br>Near Durgadi Killa, Bhiwandi – Murbad Road, Wadeghar,<br>
+                Kalyan (W) – 421 301, Dist. Thane.<br>
+                Tel: 0251-2212378/2212372<br>
+                Email: <a href="mailto:ldsonawanecollege@rediffmail.com">ldsonawanecollege@rediffmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 L.D. Sonawne College. All rights reserved.
+    </div>
+
+</body>
+</html>
